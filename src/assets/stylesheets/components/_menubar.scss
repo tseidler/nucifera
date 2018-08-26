@@ -1,0 +1,7 @@
+#menubar {
+  border-right: 2px solid #fff;
+
+  li + li {
+    border-top: 1px solid #000;
+  }
+}

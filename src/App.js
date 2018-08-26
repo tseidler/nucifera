@@ -12,7 +12,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="app">
+      <div id="app" className="columns">
         <MenuBar />
         <ContentScreen />
       </div>
