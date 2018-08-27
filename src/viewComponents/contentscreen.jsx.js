@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ContentScreen extends Component {
   render() {
     return (
-      <div id="mainContent">
+      <div id="mainContent" className="column">
         <h1>Main Content</h1>
         <p>Dit is de homepage</p>
         <article className="message">

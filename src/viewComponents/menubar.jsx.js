@@ -26,7 +26,7 @@ class MenuBar extends Component {
           <li className="menu-item users">
             Gebruikers
             <span className="fa-li">
-              <i className="far fa-users" />
+              <i className="fas fa-user-friends" />
             </span>
           </li>
         </ul>
