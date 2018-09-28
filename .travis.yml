@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 'node'
+
+install:
+  - npm install
+  - npm run build
+
+env:
+  global:
+    - 'FTP_USER=[user]'
+    - 'FTP_PASSWORD=[password]'
+    - 'FTP_HOST=[host]'
+
+after_success:
+  - gulp deploy --site FTP_HOST --user FTP_USER --password FTP_PASSWORD
