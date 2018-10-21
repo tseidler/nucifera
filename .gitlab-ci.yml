@@ -1,0 +1,27 @@
+--- 
+image: node:8.12.0
+build_step: 
+  before_script: 
+    - "yarn install"
+  only: 
+    - master
+  script: 
+    - "npm run build"
+  artifacts:
+    paths:
+      - dist
+  stage: build
+  
+deploy_step: 
+  only: 
+    - master
+  script: 
+    - "apt-get update -qq && apt-get install -y -qq lftp"
+    - "lftp -c \"set ftp:ssl-allow no; open -u \"$USERNAME,$PASSWORD\" $HOST; mirror -Rev dist/ ./  --ignore-time --parallel=10 --exclude-glob .git* --exclude .git/\""
+  stage: deploy
+  
+stages: 
+  - build
+  - deploy
+
+
