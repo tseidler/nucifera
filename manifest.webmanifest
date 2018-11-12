@@ -5,7 +5,7 @@
   "theme_color": "#c1eefa",
   "start_url": "/",
   "display": "fullscreen",
-  "orientation": "any",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon_small.png",
