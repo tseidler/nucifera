@@ -1,9 +1,14 @@
 {
-  "short_name": "Nucifera",
-  "name": "Nucifera PWA",
+  "short_name": "Coconut",
+  "name": "Coconut",
+  "background_color": "#c1eefa",
+  "theme_color": "#c1eefa",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "any",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icon_small.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -12,9 +17,5 @@
       "sizes": "144x144",
       "type": "image/png"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#c1eefa",
-  "background_color": "#c1eefa"
+  ]
 }
