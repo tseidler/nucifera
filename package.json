@@ -20,7 +20,7 @@
     "vinyl-ftp": "^0.6.1"
   },
   "scripts": {
-    "start": "parcel index.html --https",
+    "start": "parcel index.html",
     "build": "parcel build index.html && parcel build src/coconut_service_worker.js"
   },
   "devDependencies": {
