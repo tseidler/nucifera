@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html && parcel build src/coconut_service_worker.js"
+    "build": "parcel build index.html src/coconut_service_worker.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
