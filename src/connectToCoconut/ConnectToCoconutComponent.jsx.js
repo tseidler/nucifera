@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
+import SplashLogo from '../../images/splash_logo.svg';
 
 class ConnectToCoconutComponent extends Component {
   render() {
     return (
       <section className="hero is-fullheight">
         <div className="hero-body">
-          <figure className="image is-128x128">
-            <img src="./images/splash_logo.svg" />
-          </figure>
           <div className="container">
-            <h1>Coconutgebruiker koppelen</h1>
-            <p>Voordat je de Coconut app kunt gebruiken zal je eerst je coconut account moeten koppelen. Dit doe je als volgt:</p>
-            <ol>
-              <li>
-                Open een browser en ga naar <a href="https://coconut.ogd.nl/mobile">coconut.ogd.nl/mobile</a>
-              </li>
-              <li>Vul hier een naam voor dit toestel in en klik op 'Vraag code aan'</li>
-              <li>Vul die code hieronder in</li>
-            </ol>
+            <figure className="image is-square">
+              <img src={SplashLogo} />
+            </figure>
+            <p>
+              Vraag een code aan op <a href="https://coconut.ogd.nl/mobile">coconut.ogd.nl/mobile</a> om deze app toegang te geven tot je Coconut account.
+            </p>
+            <br />
+            <div className="field">
+              <input className="input is-medium" type="text" placeholder="AAAA-BBBB-CCCC" />
+            </div>
+            <div className="field">
+              <button className="button is-fullwidth green">Koppelen</button>
+            </div>
           </div>
         </div>
       </section>
