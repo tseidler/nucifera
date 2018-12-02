@@ -3,6 +3,12 @@ import SplashLogo from '../../images/splash_logo.svg';
 import '../assets/stylesheets/components/connectToCoconut.scss';
 
 class ConnectToCoconutComponent extends Component {
+  validateAndConnect(event) {
+    let coconutApiCode = document.querySelector('#api-code').value;
+    coconutApiCode = coconutApiCode.trim().replace('-', '');
+
+    alert('api code: ', coconutApiCode);
+  }
   render() {
     return (
       <section className="hero is-fullheight connect-keycode">
@@ -16,10 +22,12 @@ class ConnectToCoconutComponent extends Component {
             </p>
             <br />
             <div className="field">
-              <input className="input is-medium" type="text" placeholder="AAAA-BBBB-CCCC" />
+              <input className="input is-medium" type="text" id="api-code" placeholder="AAAA-BBBB-CCCC" />
             </div>
             <div className="field">
-              <button className="button is-fullwidth green">Koppelen</button>
+              <button className="button is-fullwidth green" onClick={e => this.validateAndConnect(e)}>
+                Koppelen
+              </button>
             </div>
           </div>
         </div>
