@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import SplashLogo from '../../images/splash_logo.svg';
+import '../assets/stylesheets/components/connectToCoconut.scss';
 
 class ConnectToCoconutComponent extends Component {
   render() {
     return (
-      <section className="hero is-fullheight">
+      <section className="hero is-fullheight connect-keycode">
         <div className="hero-body">
           <div className="container">
-            <figure className="image is-square">
+            <figure className="logo">
               <img src={SplashLogo} />
             </figure>
             <p>
